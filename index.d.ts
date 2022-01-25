@@ -4,7 +4,7 @@ declare module "react-native-matomo" {
 
         export function setUserId(userId: string);
 
-        export function setCustomDimension(id: string, value: string);
+        export function setCustomDimension(id: number, value: string);
 
         export function setAppOptOut(isOptedOut: boolean);
 
@@ -23,6 +23,8 @@ declare module "react-native-matomo" {
         export function trackContentInteraction(name: string, interaction: string, piece: string, target: string);
 
         export function trackSearch(query: string, category: string, resultCount: string, url: string);
+
+        export function trackClick(url: string);
     }
     export default BNFMatomo;
 }

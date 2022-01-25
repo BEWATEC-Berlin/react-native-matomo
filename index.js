@@ -33,5 +33,8 @@ module.exports = {
   },
   trackSearch: function(query, category, resultCount, url) {
     Matomo.trackSearch(query, {category, resultCount, url});
+  },
+  trackClick: function(url) {
+    Matomo.trackClick(url);
   }
 };
